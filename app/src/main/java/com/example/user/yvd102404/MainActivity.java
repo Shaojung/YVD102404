@@ -44,12 +44,10 @@ public class MainActivity extends AppCompatActivity {
         mylist.add(m3);
         adapter2 = new SimpleAdapter(MainActivity.this,
                     mylist,
-                    android.R.layout.simple_list_item_2,
+                    R.layout.myitem,
                     new String[]{"city", "code"},
-                    new int[] {android.R.id.text1, android.R.id.text2}
+                    new int[] {R.id.tvCity, R.id.tvCode}
                     );
         spinner2.setAdapter(adapter2);
-
-
     }
 }
